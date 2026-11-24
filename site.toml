@@ -1,0 +1,27 @@
+# Static content for atlantisanalytics.com. build.py adds the live parts (this week's bakeoff
+# picks, the crate's version, recent merged pull requests) at build time.
+
+[company]
+name = "Atlantis Analytics, LLC"
+tagline = "Independent engineering and analytics: open AI benchmarks, agentic tooling, and the hardware to run them."
+email = "dave@atlantisanalytics.com"
+location = "Long Beach, CA"
+x = "dive_atlantis"
+
+[bakeoff]
+url = "https://bakeoff.si"
+repo = "AtlantisAnalytics/bakeoff"
+summary = "Open, reproducible benchmarks of new open-weight AI models on the GPUs people actually own, published every Monday with a plain answer: which model to run on your card."
+topology = "Four used RTX 3060s against one RTX 3090 Ti: 92% of its speed on a 27B model, and 16% faster on an 8B."
+
+[watchmaker]
+crate = "drmanhattan"
+repo = "AtlantisAnalytics/drmanhattan"
+summary = "A Rust tool that breaks directory trees into deduplicated, compressed chunks and rebuilds them byte for byte, so labelled ML datasets survive storage exactly."
+
+[athena]
+summary = "Our agent platform. It runs the bakeoff lab end to end: finds new models, wakes the GPU servers, runs and scrubs the tests, and opens every result as a pull request for a person to review."
+
+[activity]
+repos = ["AtlantisAnalytics/bakeoff", "AtlantisAnalytics/drmanhattan"]
+count = 5
